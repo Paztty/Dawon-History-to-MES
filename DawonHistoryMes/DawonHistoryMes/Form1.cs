@@ -46,7 +46,9 @@ namespace DawonHistoryMes
             string folderResult = now.ToString("yyyyMM");
             tbDawonHistoryFolder.Text = DPTpath;
             tbMesHistoryFolder.Text = MESpath;
+            timer1.Interval = (int)nudCycletime.Value * 1000 * 60;
             timer1.Start();
+            copyFile();
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -77,7 +79,7 @@ namespace DawonHistoryMes
         public void copyFile()
         {
             now = DateTime.Now;
-            string folderResult = now.ToString("yy") + @"\" + now.ToString("MM");
+            string folderResult = now.ToString("yyyy") + @"\" + now.ToString("MM");
             string fileResult = now.ToString("dd");
 
             if (!Directory.Exists(MESpath + @"\" + folderResult)) Directory.CreateDirectory(MESpath);
@@ -99,7 +101,7 @@ namespace DawonHistoryMes
                                 if (!IsFileLocked(fileInfo))
                                 {
                                     string alldata = File.ReadAllText(f);
-                                    buffer = File.ReadAllText(@"C:\DEV_PJT\DPT_MES_BRIDE\" + "buffer.txt");
+                                    buffer = File.ReadAllText(@"C:\DEV_PJT\Dawon_MES_BRIDE\" + "buffer.txt");
                                     string newdata = "";
                                     if (buffer.Length < alldata.Length)
                                         newdata = alldata.Remove(0, buffer.Length);
@@ -109,7 +111,7 @@ namespace DawonHistoryMes
 
                                     if (newdata.Length > 0)
                                         File.WriteAllText(MESpath + @"\" + fileInfo.Name, newdata);
-                                    File.WriteAllText(@"C:\DEV_PJT\DPT_MES_BRIDE\" + "buffer.txt", alldata);
+                                    File.WriteAllText(@"C:\DEV_PJT\Dawon_MES_BRIDE\" + "buffer.txt", alldata);
                                 }
                             }
                         }
