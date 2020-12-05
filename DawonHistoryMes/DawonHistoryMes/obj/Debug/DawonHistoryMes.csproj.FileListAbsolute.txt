@@ -1,0 +1,10 @@
+F:\1. Project\14. Dawon History save\DawonHistoryMes\DawonHistoryMes\bin\Debug\DawonHistoryMes.exe.config
+F:\1. Project\14. Dawon History save\DawonHistoryMes\DawonHistoryMes\bin\Debug\DawonHistoryMes.exe
+F:\1. Project\14. Dawon History save\DawonHistoryMes\DawonHistoryMes\bin\Debug\DawonHistoryMes.pdb
+F:\1. Project\14. Dawon History save\DawonHistoryMes\DawonHistoryMes\obj\Debug\DawonHistoryMes.csprojAssemblyReference.cache
+F:\1. Project\14. Dawon History save\DawonHistoryMes\DawonHistoryMes\obj\Debug\DawonHistoryMes.Form1.resources
+F:\1. Project\14. Dawon History save\DawonHistoryMes\DawonHistoryMes\obj\Debug\DawonHistoryMes.Properties.Resources.resources
+F:\1. Project\14. Dawon History save\DawonHistoryMes\DawonHistoryMes\obj\Debug\DawonHistoryMes.csproj.GenerateResource.cache
+F:\1. Project\14. Dawon History save\DawonHistoryMes\DawonHistoryMes\obj\Debug\DawonHistoryMes.csproj.CoreCompileInputs.cache
+F:\1. Project\14. Dawon History save\DawonHistoryMes\DawonHistoryMes\obj\Debug\DawonHistoryMes.exe
+F:\1. Project\14. Dawon History save\DawonHistoryMes\DawonHistoryMes\obj\Debug\DawonHistoryMes.pdb
