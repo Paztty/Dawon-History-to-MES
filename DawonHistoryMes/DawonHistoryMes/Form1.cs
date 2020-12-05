@@ -41,6 +41,11 @@ namespace DawonHistoryMes
             string config = DPTpath + Environment.NewLine + MESpath + Environment.NewLine + nudCycletime.Value.ToString();
             File.WriteAllText(@"C:\DEV_PJT\Dawon_MES_BRIDE\configs.cfg", config);
 
+            if (!File.Exists(@"C:\DEV_PJT\Dawon_MES_BRIDE\" + "buffer.txt"))
+                File.WriteAllText(@"C:\DEV_PJT\Dawon_MES_BRIDE\" + "buffer.txt", buffer);
+            else
+                buffer = File.ReadAllText(@"C:\DEV_PJT\Dawon_MES_BRIDE\" + "buffer.txt");
+
             notifyIcon.Visible = true;
             now = DateTime.Now;
             string folderResult = now.ToString("yyyyMM");
@@ -59,6 +64,7 @@ namespace DawonHistoryMes
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            if (!Directory.Exists(@"C:\DEV_PJT\Dawon_MES_BRIDE\")) Directory.CreateDirectory(@"C:\DEV_PJT\Dawon_MES_BRIDE\");
             if (!File.Exists(@"C:\DEV_PJT\Dawon_MES_BRIDE\" + "buffer.txt"))
                 File.WriteAllText(@"C:\DEV_PJT\Dawon_MES_BRIDE\" + "buffer.txt", buffer);
             else
